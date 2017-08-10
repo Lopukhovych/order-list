@@ -1,28 +1,15 @@
 # OrderList
+This project was generated with Angular CLI; 
+Used technologies Angular 2(4), Bottstrap CSS 3; 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+## Launch of the project
+1. Download the repository;
+2. In the project folder in the console, run `npm install`;
+3. After installing all the modules in the console, run `npm start`;
+4. In your browser in the URL line enter the line `http: // localhost: 4200 /` and wait for the application to load;
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+###Content
+1. The app contains 3 pages: 
+    1) The first page contains a list of data. Available options to filter data by name and sort data by price. Also User can add data-item to cart list.
+    2) Second page contains a list of added items, sum of their price. Available opportunity remove item from cart and save it in history list.
+    3) Third page contains list of orders sorted by date.

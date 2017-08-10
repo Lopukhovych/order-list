@@ -1,0 +1,19 @@
+table.table-striped td,
+table.table-striped th{
+    vertical-align: inherit;
+    text-align: center;
+}
+.total-price{
+    text-align: center;
+}
+.total-price>span{
+    display: inline-block;
+    margin: 2% auto 0;
+}
+.total-price .btn{
+    float:right;
+    /*text-align: right;*/
+}
+.empty-cart-list{
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+<div class="control-buttons">
+  <h2>Order List</h2>
+  <button class="btn btn-primary col-xs-6 col-md-2" (click)="onSortBottomToTop()">
+    Bottom sort <span class="glyphicon glyphicon-triangle-bottom" ></span>
+  </button>
+  <button class="btn btn-primary col-xs-6 col-md-2 col-md-offset-1" (click)="onSortTopToBottom()">
+    Top sort <span class="glyphicon glyphicon-triangle-top"></span>
+  </button>
+  <form [formGroup]="filterForm">
+    <label class=" col-xs-12 col-md-3 label-for-folter-data">Enter a name of data: </label>
+      <input
+          [formControlName]="'filterInput'"
+          (keyup)="onFilterData()"
+          class="form-control filter-data"
+          placeholder = "Enter a name of data:"
+      >
+  </form>
+</div>
+<table class="table table-striped" align="center">
+  <thead>
+  <tr>
+    <th>Number</th>
+    <th>Name</th>
+    <th>Ingredients</th>
+    <th>Price</th>
+    <th>Adding to cart</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of dataList; let i = index">
+    <td>{{ i+1 }}</td>
+    <td>{{ item.name }}</td>
+    <td>{{ item.ingredients }}</td>
+    <td>{{ item.price }}$</td>
+    <td data-title="Added to the Cart list">
+      <button
+
+          class="btn btn-primary"
+          (click)="onAddDataToCartList(item)"
+      >Add to cart
+      </button
+          >
+    </td>
+  </tr>
+  </tbody>
+</table>

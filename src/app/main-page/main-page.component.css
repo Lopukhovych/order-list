@@ -1,0 +1,15 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.label-for-folter-data{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1% auto;
+}
+.filter-data{
+    display: inline-block;
+}
+@media screen and (min-width: 992px){
+    .filter-data{
+        width: 32%;
+    }
+}

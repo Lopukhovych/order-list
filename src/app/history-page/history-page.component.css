@@ -1,0 +1,13 @@
+.empty-cart-list {
+    text-align: center;
+}
+
+.confirmed-item {
+    background: #286090;
+    color: #fff;
+}
+
+.non-confirmed-item {
+    background: #d9534f;
+    color: #fff;
+}

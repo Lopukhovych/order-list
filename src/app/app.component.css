@@ -1,0 +1,8 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.example-form {
+    width: 500px;
+}
+
+.example-full-width {
+    width: 100%;
+}

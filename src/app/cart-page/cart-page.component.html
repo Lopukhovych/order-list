@@ -1,0 +1,38 @@
+<div class="cart-items table-responsive">
+  <table class="table table-striped" align="center">
+    <thead>
+    <tr>
+      <th>Number</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Removing</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngIf="cartList.length === 0;">
+      <td colspan="4" class="empty-cart-list">The Cart List is empty</td>
+    </tr>
+    <tr
+        *ngFor="let item of cartList; let i = index"
+    >
+      <td>{{ i+1 }}</td>
+      <td>{{ item.data.name }}</td>
+      <td>{{ item.data.price }}$</td>
+      <td>
+        <button class="btn btn-danger" (click)="onRemoveCartItem(item,i)">Remove item</button>
+      </td>
+    </tr>
+    <tr *ngIf="cartList.length !== 0;">
+      <td colspan="2"></td>
+      <td colspan="2" class="total-price"><span>Total Price:  {{ totalPrice }}$</span>
+        <button class="btn btn-primary" (click)="onConfirm()">Confirm</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div
+      *ngIf="confirmed === true"
+      class="show-confirmed">
+    <h4>Order: {{ confirmedData }} was confirmed. Total price is {{totalPrice}}$. Thanks for your order</h4>
+  </div>
+</div>

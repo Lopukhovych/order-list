@@ -1,0 +1,28 @@
+<div class="history-list">
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Order number</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Data</th>
+      <th>Confirmed</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngIf="historyList.length === 0;">
+      <td colspan="5" class="empty-cart-list">The History List is empty</td>
+    </tr>
+    <tr
+        *ngFor="let item of historyList; let i = index"
+        [ngClass]="item.cart.confirmed ? 'confirmed-item' : 'non-confirmed-item'"
+    >
+      <td>{{i+1}}</td>
+      <td>{{item.cart.data.name}}</td>
+      <td>{{item.cart.data.price}}$</td>
+      <td>{{ item.date.toLocaleDateString('en-GB',dataOptions) }}</td>
+      <td>{{item.cart.confirmed}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
