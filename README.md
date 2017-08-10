@@ -8,7 +8,7 @@ Used technologies Angular 2(4), Bottstrap CSS 3;
 3. After installing all the modules in the console, run `npm start`;
 4. In your browser in the URL line enter the line `http: // localhost: 4200 /` and wait for the application to load;
 
-###Conten
+###Content
 1. The app contains 3 pages: 
     1) The first page contains a list of data. Available options to filter data by name and sort data by price. Also User can add data-item to cart list.
     2) Second page contains a list of added items, sum of their price. Available opportunity remove item from cart and save it in history list.
